@@ -59,16 +59,16 @@ td.DayNum {
   <tr>
     <td class="DayNum" style="background-color:#c7c9cc"></td>
     <td class="DayNum" style="background-color:#c7c9cc"></td> 
-    <td class="DayNum" style = "color:#FF0000">1</td>
-	<td class="DayNum">2</td>
+    <td class="DayNum" style = "color:#FF0000"><%= link_to '1', edit_article_path(@articles[0]) %><br><%= @articles[0].text %></td>
+	<td class="DayNum"><%= @articles[1].title %></td>
 	<td class="DayNum">3</td>
 	<td class="DayNum">4</td>
 	<td class="DayNum">5</td>
   </tr>
   <tr>
-    <td class="DayNum">6</td>
-    <td class="DayNum">7</td> 
-    <td class="DayNum">8</td>
+  <td class="DayNum">6</td>
+  <td class="DayNum">7</td> 
+  <td class="DayNum">8</td>
 	<td class="DayNum">9</td>
 	<td class="DayNum">10</td>
 	<td class="DayNum">11</td>
