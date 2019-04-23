@@ -57,13 +57,13 @@ td.DayNum {
   </tr>
   <!-- <tr onclick="document.location='DayViewExample.html'" style="cursor:pointer"> -->
   <tr>
-    <td class="DayNum" style="background-color:#c7c9cc"></td>
-    <td class="DayNum" style="background-color:#c7c9cc"></td> 
-    <td class="DayNum" style = "color:#FF0000"><%= link_to '1', edit_article_path(@articles[0]) %><br><%= @articles[0].text %></td>
-	<td class="DayNum"><%= @articles[1].title %></td>
-	<td class="DayNum">3</td>
-	<td class="DayNum">4</td>
-	<td class="DayNum">5</td>
+  <td class="DayNum" style="background-color:#c7c9cc"></td>
+  <td class="DayNum" style="background-color:#c7c9cc"></td> 
+  <td class="DayNum" style="color:#FF0000;white-space:pre-wrap"><%= link_to '1', edit_article_path(@articles[0]) %><br><%= @articles[0].text %></td>
+	<td class="DayNum" style="white-space:pre-wrap"><%= link_to '2', edit_article_path(@articles[1]) %><br><%= @articles[1].text %></td>
+  <td class="DayNum" style="white-space:pre-wrap"><%= link_to '3', edit_article_path(@articles[2]) %><br><%= @articles[2].text %></td>
+  <td class="DayNum" style="white-space:pre-wrap"><%= link_to '4', edit_article_path(@articles[3]) %><br><%= @articles[3].text %></td>
+	<td class="DayNum" style="white-space:pre-wrap"><%= link_to '5', edit_article_path(@articles[4]) %><br><%= @articles[4].text %></td>
   </tr>
   <tr>
   <td class="DayNum">6</td>
@@ -102,13 +102,15 @@ td.DayNum {
 	<td class="DayNum" style="background-color:#c7c9cc"></td>
   </tr>
 </table>
+<br>
+<br>
 
 
  <!--------------------------------------------------------------------------------------------------------------------------------------------->
   <!--------------------------------------------------------------------------------------------------------------------------------------------->
    <!--------------------------------------------------------------------------------------------------------------------------------------------->
     <!--------------------------------------------------------------------------------------------------------------------------------------------->
-<table style="width:45%" align="right">
+<table style="width:85em;margin:1em auto">
   <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">Feburary</th>
   </tr>
@@ -168,11 +170,13 @@ td.DayNum {
 	<td class="DayNum" style="background-color:#c7c9cc"></td>
   </tr>
 </table>
+<br>
+<br>
 <!--------------------------------------------------------------------------------------------------------------------------------------------->
          <!--------------------------------------------------------------------------------------------------------------------------------------------->
          
          
-<table style="width:45%" align="left">
+<table style="width:85em;margin:1em auto">
   <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">March</th>
   </tr>
@@ -241,13 +245,14 @@ td.DayNum {
       <td class="DayNum" style="background-color:#c7c9cc"></td>
   </tr>
 </table>
-
+<br>
+<br>
 
  <!--------------------------------------------------------------------------------------------------------------------------------------------->
   <!--------------------------------------------------------------------------------------------------------------------------------------------->
    <!--------------------------------------------------------------------------------------------------------------------------------------------->
     <!--------------------------------------------------------------------------------------------------------------------------------------------->
-<table style="width:45%;margin-bottom:8.64em" align="right">
+<table style="width:85em;margin:1em auto">
   <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">April</th>
   </tr>
@@ -307,11 +312,13 @@ td.DayNum {
 	<td class="DayNum" style="background-color:#c7c9cc"></td>
   </tr>
 </table>
+<br>
+<br>
 <!--------------------------------------------------------------------------------------------------------------------------------------------->
          <!--------------------------------------------------------------------------------------------------------------------------------------------->
          
          
-<table style="width:45%;margin-bottom:8.64em" align="left">
+<table style="width:85em;margin:1em auto">
   <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">May</th>
   </tr>
@@ -371,13 +378,14 @@ td.DayNum {
 	<td class="DayNum" style="background-color:#c7c9cc"></td>
   </tr>
 </table>
-
+<br>
+<br>
 
  <!--------------------------------------------------------------------------------------------------------------------------------------------->
   <!--------------------------------------------------------------------------------------------------------------------------------------------->
    <!--------------------------------------------------------------------------------------------------------------------------------------------->
     <!--------------------------------------------------------------------------------------------------------------------------------------------->
-<table style="width:45%" align="right">
+<table style="width:85em;margin:1em auto">
   <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">June</th>
   </tr>
@@ -446,9 +454,10 @@ td.DayNum {
 	<td class="DayNum" style="background-color:#c7c9cc"></td>
   </tr>
 </table>
-</div>
+<br>
+<br>
 
-<table style="width:45%" align="left">
+<table style="width:85em;margin:1em auto">
   <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">July</th>
   </tr>
@@ -508,11 +517,14 @@ td.DayNum {
 	<td class="DayNum" style="background-color:#c7c9cc"></td>
   </tr>
 </table>
+<br>
+<br>
+
  <!--------------------------------------------------------------------------------------------------------------------------------------------->
   <!--------------------------------------------------------------------------------------------------------------------------------------------->
    <!--------------------------------------------------------------------------------------------------------------------------------------------->
     <!--------------------------------------------------------------------------------------------------------------------------------------------->
-<table style="width:45%" align="right">
+<table style="width:85em;margin:1em auto">
   <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">August</th>
   </tr>
@@ -572,13 +584,11 @@ td.DayNum {
 	<td class="DayNum">31</td>
   </tr>
 </table>
-</div>
+<br>
+<br>
 
 
-
-
-
-<table style="width:45%" align="left">
+<table style="width:85em;margin:1em auto">
   <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">September</th>
   </tr>
@@ -638,14 +648,14 @@ td.DayNum {
 	<td class="DayNum" style="background-color:#c7c9cc"></td>
   </tr>
 </table>
-
+<br>
+<br>
 
  <!--------------------------------------------------------------------------------------------------------------------------------------------->
   <!--------------------------------------------------------------------------------------------------------------------------------------------->
    <!--------------------------------------------------------------------------------------------------------------------------------------------->
     <!--------------------------------------------------------------------------------------------------------------------------------------------->
-<table style="width:45%" align="right">
-  <tr>
+<table style="width:85em;margin:1em auto">  <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">October</th>
   </tr>
   <tr>
@@ -704,11 +714,10 @@ td.DayNum {
 	<td class="DayNum" style="background-color:#c7c9cc"></td>
   </tr>
 </table>
-</div>
+<br>
+<br>
 
-
-<table style="width:45%" align="left">
-  <tr>
+<table style="width:85em;margin:1em auto">  <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">November</th>
   </tr>
   <tr>
@@ -767,14 +776,14 @@ td.DayNum {
 	<td class="DayNum">30</td>
   </tr>
 </table>
-
+<br>
+<br>
 
  <!--------------------------------------------------------------------------------------------------------------------------------------------->
   <!--------------------------------------------------------------------------------------------------------------------------------------------->
    <!--------------------------------------------------------------------------------------------------------------------------------------------->
     <!--------------------------------------------------------------------------------------------------------------------------------------------->
-<table style="width:45%" align="right">
-  <tr>
+<table style="width:85em;margin:1em auto">  <tr>
     <th colspan="7"style="background-color:#7194da;color:white;text-shadow: 1px 1px black;">December</th>
   </tr>
   <tr>
@@ -833,7 +842,8 @@ td.DayNum {
 	<td class="DayNum" style="background-color:#c7c9cc"></td>
   </tr>
 </table>
-
+<br>
+<br>
 
 </body>
 </html>
