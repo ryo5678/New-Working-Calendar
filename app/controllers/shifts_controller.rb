@@ -11,7 +11,7 @@ class ShiftsController < ApplicationController
     end
     
     def create
-        @shift = Shift.new(article_params)
+        @shift = Shift.new(shift_params)
         
         if @shift.save
             redirect_to @shift
@@ -19,9 +19,31 @@ class ShiftsController < ApplicationController
             render 'new'
         end
     end
+    
+    def edit
+        @shift = Shift.find(params[:id])
+    end
+    
+    def update
+        @shift = Shift.find(params[:id])
+        
+        if @shift.update(shift_params)
+            redirect_to @shift
+        else
+            render 'edit'
+        end
+    end
+    
+    def destroy
+        @shift = Shift.find(params[:id])
+        @shift.destroy
+        
+        redirect_to shifts_path
+    end
+        
 end
 
 private 
-    def article_params
+    def shift_params
         params.require(:shift).permit(:hours)
     end
