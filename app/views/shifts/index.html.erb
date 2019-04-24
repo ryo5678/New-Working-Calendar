@@ -1,0 +1,14 @@
+<h1>Listing Shifts</h1>
+<%= link_to 'New shift', new_shift_path%>
+<table>
+    <tr>
+        <th>Hours</th>
+    </tr>
+    
+    <% @shifts.each do |shift| %>
+    <tr>
+        <td><%= shift.hours %></td>
+        <td><%= link_to 'Show', shift_path(shift) %></td>
+    </tr>
+    <% end %>
+</table>
