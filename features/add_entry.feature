@@ -1,14 +1,29 @@
-Feature: Add a new blog entry
+Feature: Sign in
 
-    As a blogger
-    So that I can easily contribute content to my blog 
-    I want to be able to add a new blog entry
+    As a user
+    So that I can manage my schedule
+    I want to be able to log in to the webapp
                                                                                               
-Scenario: As a blogger I want to be able to navigate from the homepage to the new article form
- Given I am on the home page
- When I click on the "My Blog" link
- Then I should be on the "Listing articles" page
- When I click on the "New article" link 
- Then I should be on the "New Article" page 
- And I should see the "Title" field
- And I should see the "Text" field
+Scenario: As a user I want to be able to navigate from the login screen to the schedule screen
+ Given I am on the login screen
+ When I click on the "Username:" field
+ Then I should see the "Eric" field
+ When I click on the "Eric" field and I click on the "Submit" link
+ Then I should be on the "Calendar for the Year 2019" page
+ And I should see the "1" field
+ 
+Feature: Schedule a shift
+   
+   As a user
+   So that I can have a schedule
+   I want to be able to create and delete shifts
+  
+Scenario: As a user I want to be able to create and delete shifts from my schedule
+ Given I am on the "Calendar for the Year 2019" page
+ When I click on the "1" field
+ Then I should be on the "Details" page
+ When I click on the "Hours" field
+ Then I should see the "7-3" field
+ When I click on the "7-3" field and I click on the "Submit" link
+ Then I should be on the "Calendar for the Year 2019" page
+ And I should see the "Eric - 7-3" field
